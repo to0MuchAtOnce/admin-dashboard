@@ -1,6 +1,27 @@
+:root {
+  --sidebar: #eff6e0;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(69, 75, 88);
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: var(--sidebar);
+}
+
+.logo-container {
+  display: flex;
+}
+
+.ph-checkerboard {
+  color: #124559;
+  font-size: 3em;
+}
+
+.container {
+  display: flex;
 }

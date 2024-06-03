@@ -7,6 +7,7 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Admin Dashboard</title>
   </head>
+
   <body>
     <div class="container">
       <div class="sidebar">
@@ -17,21 +18,29 @@
 
         <div class="main-links">
           <ul>
-            <li class="main-link"><i class="ph ph-house"> </i>Home</li>
-            <li class="main-link"><i class="ph ph-user"> </i>Profile</li>
-            <li class="main-link"><i class="ph ph-chats"> </i>Message</li>
             <li class="main-link">
-              <i class="ph ph-clock-counter-clockwise"></i> History
+              <i class="main-icon ph ph-house"> </i>Home
             </li>
-            <li class="main-link"><i class="ph ph-note-pencil"> </i>Tasks</li>
             <li class="main-link">
-              <i class="ph ph-users-three"> </i>Communities
+              <i class="main-icon ph ph-user"> </i>Profile
+            </li>
+            <li class="main-link">
+              <i class="main-icon ph ph-chats"> </i>Message
+            </li>
+            <li class="main-link">
+              <i class="main-icon ph ph-clock-counter-clockwise"> </i>History
+            </li>
+            <li class="main-link">
+              <i class="main-icon ph ph-note-pencil"> </i>Tasks
+            </li>
+            <li class="main-link">
+              <i class="main-icon ph ph-users-three"> </i>Communities
             </li>
           </ul>
         </div>
 
         <div class="secondary-links">
-          <ul class="li secondary-links">
+          <ul>
             <i class="ph ph-gear"></i>
             Settings
           </ul>
@@ -46,8 +55,8 @@
         </div>
       </div>
 
-      <div class="header">
-        <div class="header-top">
+      <div class="header-container">
+        <div class="header">
           <div class="search-bar">
             <span class="search-icon"
               ><i class="ph ph-magnifying-glass"> </i
@@ -55,42 +64,42 @@
             <input type="search" id="search" name="search" />
           </div>
 
-          <ul>
-            <li class="header-link-top bell-icon">
-              <i class="ph ph-bell"></i>
-            </li>
-            <li class="header-link-top profile-pic">
-              <i class="ph ph-user-circle"></i>
-            </li>
-            <li class="header-link-top username">Dave Smith</li>
-          </ul>
-
-          <div class="header-bottom">
+          <div class="header-menu">
             <ul>
-              <li class="header-link-btm profile-pic-lrg">
+              <li class="header-link-top bell-icon">
+                <i class="ph ph-bell"></i>
+              </li>
+              <li class="header-link-top profile-pic">
                 <i class="ph ph-user-circle"></i>
               </li>
-              <ul class="welcome-msg">
-                <li class="header-link-btm welcome">Hi there,</li>
-                <li class="header-link-btm username-tag">
-                  Dave Smith (@DSmith)
-                </li>
-              </ul>
-              <div>
-                <button class="header-link-btm">New</button>
-                <button class="header-link-btm">Upload</button>
-                <button class="header-link-btm">Share</button>
-              </div>
+              <li class="header-link-top username">Dave Smith</li>
             </ul>
+          </div>
+        </div>
+
+        <div class="nav">
+          <ul class="welcome-msg">
+            <li class="nav-prof-pic">
+              <i class="ph ph-user-circle"></i>
+            </li>
+            <ul>
+              <li class="nav-link welcome">Hi there,</li>
+              <li class="nav-link username-tag">Dave Smith (@DSmith)</li>
+            </ul>
+          </ul>
+
+          <div class="nav-menu">
+            <button class="nav-menu-link">New</button>
+            <button class="nav-menu-link">Upload</button>
+            <button class="nav-menu-link">Share</button>
           </div>
         </div>
       </div>
 
       <main class="main">
-        <h2 class="heading-2">Your Projects</h2>
-
+        <h2 class="heading-2 projects">Your Projects</h2>
         <div class="main-content">
-          <div class="card card-1">
+          <div class="card-1">
             card-1
             <h3 class="heading-3">Card Heading</h3>
             <p class="card-para">
@@ -197,53 +206,55 @@
               ><i><i class="ph ph-share-network"></i></i
             ></a>
           </div>
-        </div>
 
-        <h2 class="heading-2">Announcements</h2>
-        <div class="announcements">
-          <h4 class="heading-4">Site Maintenance</h4>
-          <p>
-            Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
-            nulla voluptate occaecat excepteur.
-          </p>
-          <hr />
-          <h4 class="heading-4">Community share day</h4>
-          <p>
-            Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
-            nulla voluptate occaecat excepteur.
-          </p>
-          <hr />
-          <h4 class="heading-4">Updated Privacy Policy</h4>
-          <p>
-            Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
-            nulla voluptate occaecat excepteur.
-          </p>
-        </div>
+          <div class="info-bar">
+            <h2 class="heading-2">Announcements</h2>
+            <div class="announcements">
+              <h4 class="heading-4">Site Maintenance</h4>
+              <p>
+                Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
+                nulla voluptate occaecat excepteur.
+              </p>
+              <hr />
+              <h4 class="heading-4">Community share day</h4>
+              <p>
+                Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
+                nulla voluptate occaecat excepteur.
+              </p>
+              <hr />
+              <h4 class="heading-4">Updated Privacy Policy</h4>
+              <p>
+                Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
+                nulla voluptate occaecat excepteur.
+              </p>
+            </div>
 
-        <h2 class="heading-2">Trending</h2>
-        <div class="trending">
-          <div class="trend-1">
-            <i class="ph ph-user-circle"></i>
-            <span class="user-tag">@tagan</span>
-            <span class="desc-line">World Peac Builder</span>
-          </div>
+            <h2 class="heading-2">Trending</h2>
+            <div class="trending">
+              <div class="trend-1">
+                <i class="ph ph-user-circle"></i>
+                <span class="user-tag">@tagan</span>
+                <span class="desc-line">World Peac Builder</span>
+              </div>
 
-          <div class="trend-2">
-            <i class="ph ph-user-circle"></i>
-            <span class="user-tag">@morgan</span>
-            <span class="desc-line">Super Cool Project</span>
-          </div>
+              <div class="trend-2">
+                <i class="ph ph-user-circle"></i>
+                <span class="user-tag">@morgan</span>
+                <span class="desc-line">Super Cool Project</span>
+              </div>
 
-          <div class="trend-3">
-            <i class="ph ph-user-circle"></i>
-            <span class="user-tag">@tagan</span>
-            <span class="desc-line">Life Changing App</span>
-          </div>
+              <div class="trend-3">
+                <i class="ph ph-user-circle"></i>
+                <span class="user-tag">@tagan</span>
+                <span class="desc-line">Life Changing App</span>
+              </div>
 
-          <div class="trend-4">
-            <i class="ph ph-user-circle"></i>
-            <span class="user-tag">@alex</span>
-            <span class="desc-line">No Traffic Maker</span>
+              <div class="trend-4">
+                <i class="ph ph-user-circle"></i>
+                <span class="user-tag">@alex</span>
+                <span class="desc-line">No Traffic Maker</span>
+              </div>
+            </div>
           </div>
         </div>
       </main>

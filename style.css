@@ -1,5 +1,6 @@
 :root {
   --sidebar: #eff6e0;
+  --main: #eee;
 }
 
 * {
@@ -8,20 +9,102 @@
   box-sizing: border-box;
 }
 
-.sidebar {
+.container {
+  display: grid;
+  grid-template: 0.1fr 1fr / 0.2fr 1fr;
   height: 100vh;
+}
+
+.sidebar {
   background-color: var(--sidebar);
+  grid-row: 1 / 3;
+  padding: 0.5em;
 }
 
 .logo-container {
   display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.logo {
+  font-size: 18px;
+  margin-right: 0.5em;
+}
+
+.main-links,
+.secondary-links {
+  padding-left: 0.3em;
+}
+
+.main-link {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+
+.main-icon {
+  padding-right: 0.55em;
+  font-size: 36px;
+}
+
+.secondary-links {
+  display: flex;
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+
+.header-container {
+  padding: 1em;
+}
+
+.header,
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  padding-bottom: 3.75em;
+}
+
+.nav-prof-pic {
+  font-size: 3em;
+}
+
+.welcome-msg {
+  display: flex;
+}
+
+.header-menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-links ul li,
+.header-menu ul li,
+.welcome-msg ul li,
+.nav-prof-pic {
+  list-style-type: none;
+}
+
+.main {
+  background-color: var(--main);
+}
+
+.main-content {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.info-bar {
+  grid-row: 1/ 3;
+  grid-column: 3 / 4;
 }
 
 .ph-checkerboard {
   color: #124559;
   font-size: 3em;
-}
-
-.container {
-  display: flex;
 }

@@ -12,45 +12,46 @@
     <div class="container">
       <div class="sidebar">
         <div class="logo-container">
-          <span class="logo"><i class="ph ph-checkerboard"></i></span>
+          <span class="logo"><i class="ph ph-checkerboard logo-icon"></i></span>
           <h1 class="heading-1">Dashboard</h1>
         </div>
 
-        <div class="main-links">
+        <div class="sidebar-links">
           <ul>
-            <li class="main-link">
-              <i class="main-icon ph ph-house"> </i>Home
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-house"> </i>Home
             </li>
-            <li class="main-link">
-              <i class="main-icon ph ph-user"> </i>Profile
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-user"> </i>Profile
             </li>
-            <li class="main-link">
-              <i class="main-icon ph ph-chats"> </i>Message
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-chats"> </i>Message
             </li>
-            <li class="main-link">
-              <i class="main-icon ph ph-clock-counter-clockwise"> </i>History
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-clock-counter-clockwise"> </i>History
             </li>
-            <li class="main-link">
-              <i class="main-icon ph ph-note-pencil"> </i>Tasks
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-note-pencil"> </i>Tasks
             </li>
-            <li class="main-link">
-              <i class="main-icon ph ph-users-three"> </i>Communities
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-users-three"> </i>Communities
             </li>
           </ul>
         </div>
 
-        <div class="secondary-links">
+        <div class="sidebar-links-2">
           <ul>
-            <i class="ph ph-gear"></i>
-            Settings
-          </ul>
-          <ul class="li secondary-links">
-            <i class="ph ph-question"> </i>
-            Support
-          </ul>
-          <ul class="li secondary-links">
-            <i class="ph ph-shield-check"> </i>
-            Privacy
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-gear"> </i>
+              Settings
+            </li>
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-question"> </i>Support
+            </li>
+            <li class="sidebar-link">
+              <i class="sidebar-icon ph ph-shield-check"> </i>
+              Privacy
+            </li>
           </ul>
         </div>
       </div>
@@ -58,21 +59,19 @@
       <div class="header-container">
         <div class="header">
           <div class="search-bar">
-            <span class="search-icon"
-              ><i class="ph ph-magnifying-glass"> </i
-            ></span>
+            <i class="ph ph-magnifying-glass search-icon"> </i>
             <input type="search" id="search" name="search" />
           </div>
 
           <div class="header-menu">
             <ul>
-              <li class="header-link-top bell-icon">
+              <li class="header-link bell-icon">
                 <i class="ph ph-bell"></i>
               </li>
-              <li class="header-link-top profile-pic">
+              <li class="header-link profile-pic">
                 <i class="ph ph-user-circle"></i>
               </li>
-              <li class="header-link-top username">Dave Smith</li>
+              <li class="header-link username">Dave Smith</li>
             </ul>
           </div>
         </div>
@@ -80,136 +79,140 @@
         <div class="nav">
           <ul class="welcome-msg">
             <li class="nav-prof-pic">
-              <i class="ph ph-user-circle"></i>
+              <i class="ph ph-user-circle nav-prof-icon"></i>
             </li>
-            <ul>
+            <ul class="msg">
               <li class="nav-link welcome">Hi there,</li>
               <li class="nav-link username-tag">Dave Smith (@DSmith)</li>
             </ul>
           </ul>
 
           <div class="nav-menu">
-            <button class="nav-menu-link">New</button>
-            <button class="nav-menu-link">Upload</button>
-            <button class="nav-menu-link">Share</button>
+            <button class="nav-menu-link btn">New</button>
+            <button class="nav-menu-link btn">Upload</button>
+            <button class="nav-menu-link btn">Share</button>
           </div>
         </div>
       </div>
 
       <main class="main">
-        <h2 class="heading-2 projects">Your Projects</h2>
         <div class="main-content">
-          <div class="card-1">
-            card-1
+          <h2 class="heading-2 projects">Your Projects</h2>
+          <div class="card card-1">
             <h3 class="heading-3">Card Heading</h3>
             <p class="card-para">
               Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
               nulla voluptate occaecat excepteur.
             </p>
-            <a href="#"
-              ><i><i class="ph ph-thumbs-up"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-bookmark-simple"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-share-network"></i></i
-            ></a>
+            <div class="card-link">
+              <a href="#"
+                ><i><i class="ph ph-thumbs-up"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-bookmark-simple"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-share-network"></i></i
+              ></a>
+            </div>
           </div>
 
           <div class="card card-2">
-            card-2
-
             <h3 class="heading-3">Card Heading</h3>
             <p class="card-para">
               Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
-              nulla voluptate occaecat excepteur.
+              nulla voluptate occaecat excepteur. Lorem reprehenderit voluptate
+              reprehenderit aute.Commodo non, do nulla voluptate occaecat
+              excepteur.
             </p>
-            <a href="#"
-              ><i><i class="ph ph-thumbs-up"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-bookmark-simple"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-share-network"></i></i
-            ></a>
+            <div class="card-link">
+              <a href="#"
+                ><i><i class="ph ph-thumbs-up"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-bookmark-simple"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-share-network"></i></i
+              ></a>
+            </div>
           </div>
           <div class="card card-3">
-            card-3
-
             <h3 class="heading-3">Card Heading</h3>
             <p class="card-para">
               Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
               nulla voluptate occaecat excepteur.
             </p>
-            <a href="#"
-              ><i><i class="ph ph-thumbs-up"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-bookmark-simple"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-share-network"></i></i
-            ></a>
+            <div class="card-link">
+              <a href="#"
+                ><i><i class="ph ph-thumbs-up"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-bookmark-simple"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-share-network"></i></i
+              ></a>
+            </div>
           </div>
           <div class="card card-4">
-            card-4
             <h3 class="heading-3">Card Heading</h3>
             <p class="card-para">
               Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
               nulla voluptate occaecat excepteur.
             </p>
-            <a href="#"
-              ><i><i class="ph ph-thumbs-up"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-bookmark-simple"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-share-network"></i></i
-            ></a>
+            <div class="card-link">
+              <a href="#"
+                ><i><i class="ph ph-thumbs-up"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-bookmark-simple"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-share-network"></i></i
+              ></a>
+            </div>
           </div>
           <div class="card card-5">
-            card-5
-
             <h3 class="heading-3">Card Heading</h3>
             <p class="card-para">
               Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
               nulla voluptate occaecat excepteur.
             </p>
-            <a href="#"
-              ><i><i class="ph ph-thumbs-up"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-bookmark-simple"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-share-network"></i></i
-            ></a>
+            <div class="card-link">
+              <a href="#"
+                ><i><i class="ph ph-thumbs-up"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-bookmark-simple"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-share-network"></i></i
+              ></a>
+            </div>
           </div>
           <div class="card card-6">
-            card-6
-
             <h3 class="heading-3">Card Heading</h3>
             <p class="card-para">
               Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
               nulla voluptate occaecat excepteur.
             </p>
-            <a href="#"
-              ><i><i class="ph ph-thumbs-up"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-bookmark-simple"></i></i
-            ></a>
-            <a href="#"
-              ><i><i class="ph ph-share-network"></i></i
-            ></a>
+            <div class="card-link">
+              <a href="#"
+                ><i><i class="ph ph-thumbs-up"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-bookmark-simple"></i></i
+              ></a>
+              <a href="#"
+                ><i><i class="ph ph-share-network"></i></i
+              ></a>
+            </div>
           </div>
 
-          <div class="info-bar">
-            <h2 class="heading-2">Announcements</h2>
-            <div class="announcements">
+          <div class="info-panel">
+            <h2 class="heading-2 panel-heading">Announcements</h2>
+            <div class="info-card announcements">
               <h4 class="heading-4">Site Maintenance</h4>
               <p>
                 Lorem reprehenderit voluptate reprehenderit aute.Commodo non, do
@@ -229,30 +232,54 @@
               </p>
             </div>
 
-            <h2 class="heading-2">Trending</h2>
-            <div class="trending">
-              <div class="trend-1">
-                <i class="ph ph-user-circle"></i>
-                <span class="user-tag">@tagan</span>
-                <span class="desc-line">World Peac Builder</span>
+            <h2 class="heading-2 panel-heading trending-heading">Trending</h2>
+            <div class="info-card trending">
+              <div class="trend-container trend-1">
+                <ul class="trend">
+                  <li>
+                    <i class="ph ph-user-circle trend-pic"></i>
+                  </li>
+                  <ul>
+                    <li class="user-tag">@tagan</li>
+                    <li class="desc-line">World Peac Builder</li>
+                  </ul>
+                </ul>
               </div>
 
-              <div class="trend-2">
-                <i class="ph ph-user-circle"></i>
-                <span class="user-tag">@morgan</span>
-                <span class="desc-line">Super Cool Project</span>
+              <div class="trend-container trend-2">
+                <ul class="trend">
+                  <li>
+                    <i class="ph ph-user-circle trend-pic"></i>
+                  </li>
+                  <ul>
+                    <li class="user-tag">@morgan</li>
+                    <li class="desc-line">Super Cool Project</li>
+                  </ul>
+                </ul>
               </div>
 
-              <div class="trend-3">
-                <i class="ph ph-user-circle"></i>
-                <span class="user-tag">@tagan</span>
-                <span class="desc-line">Life Changing App</span>
+              <div class="trend-container trend-3">
+                <ul class="trend">
+                  <li>
+                    <i class="ph ph-user-circle trend-pic"></i>
+                  </li>
+                  <ul class="trend-text">
+                    <li class="user-tag">@tagan</li>
+                    <li class="desc-line">Life Changing App</li>
+                  </ul>
+                </ul>
               </div>
 
-              <div class="trend-4">
-                <i class="ph ph-user-circle"></i>
-                <span class="user-tag">@alex</span>
-                <span class="desc-line">No Traffic Maker</span>
+              <div class="trend-container trend-4">
+                <ul class="trend">
+                  <li>
+                    <i class="ph ph-user-circle trend-pic"></i>
+                  </li>
+                  <ul>
+                    <li class="user-tag">@alex</li>
+                    <li class="desc-line">No Traffic Maker</li>
+                  </ul>
+                </ul>
               </div>
             </div>
           </div>
